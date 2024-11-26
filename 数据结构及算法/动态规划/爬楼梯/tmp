@@ -1,0 +1,10 @@
+docker exec prod-ty-be /usr/local/bin/php /var/www/html/api/think SetTestRes 10 10.csv
+docker exec prod-ty-be /usr/local/bin/php /var/www/html/api/think SetTestRes 11 11.csv
+docker exec prod-ty-be /usr/local/bin/php /var/www/html/api/think SetTestRes 7.1.1 7.1.1.csv
+docker exec prod-ty-be /usr/local/bin/php /var/www/html/api/think SetTestRes 7.1.2 7.1.2.csv
+docker exec prod-ty-be /usr/local/bin/php /var/www/html/api/think SetTestRes 7 7.csv
+docker exec prod-ty-be /usr/local/bin/php /var/www/html/api/think SetTestRes 8.1 8.1.csv
+docker exec prod-ty-be /usr/local/bin/php /var/www/html/api/think SetTestRes 8 8.csv
+docker exec prod-ty-be /usr/local/bin/php /var/www/html/api/think SetTestRes 9 9.csv
+
+docker exec prod-ty-be /usr/local/bin/php /var/www/html/api/think SetTestRes
