@@ -1,21 +1,18 @@
 package main
 
-import (
-	"fmt"
-	"strings"
-)
+import "fmt"
 
-func maxVowels(s string, k int) int {
-	strSplit := strings.Split(s, "")
-	if k > len(strSplit) {
-		return 0
-	}
-	for i := 0; i < len(strSplit)-k; i++ {
-		strRes := getStrRes(strSplit, i, k)
-		getVowelsNum(strRes)
-	}
-
-}
+//func maxVowels(s string, k int) int {
+//	strSplit := strings.Split(s, "")
+//	if k > len(strSplit) {
+//		return 0
+//	}
+//	for i := 0; i < len(strSplit)-k; i++ {
+//		strRes := getStrRes(strSplit, i, k)
+//		getVowelsNum(strRes)
+//	}
+//
+//}
 
 // getStrRes 获取
 func getStrRes(strRes []string, begin int, k int) (res []string) {
@@ -49,6 +46,18 @@ func getVowelsNum(strRes []string) int {
 	return count
 }
 
+func sum(nums ...int) {
+	total := 0
+	for _, num := range nums {
+		total += num
+	}
+	fmt.Println(total)
+}
+
+type Set map[string]struct{}
+
 func main() {
-	fmt.Println("______res____", maxVowels("abciiidef", 3))
+	var a uint = 1
+	var b uint = 2
+	fmt.Println(a - b)
 }
